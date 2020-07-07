@@ -5,13 +5,13 @@ import random
 app=Flask(__name__)
 
 
-@app.route('numgen', methods=['GET'])
+@app.route('/numgen', methods=['GET'])
 def numgen():
-    randomlist=()
+    randstring = ""
     for x in range(0,4):
         randnum=random.randint(1,10)
-        randmomlist.append(n)
-        return Response(randnum, mimetype='text/plain')
+        randstring+=str(randnum)
+    return Response(randstring, mimetype='text/plain')
 
 
 if __name__ == "__main__":
