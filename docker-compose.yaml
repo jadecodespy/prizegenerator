@@ -14,7 +14,8 @@ services:
                         - service4
                 environment:
                         DATABASE_URI: ${DATABASE_URI}
-        
+                deploy:
+                        replicas: 2 
        
         service2:
                 image: jadesola/service2
@@ -23,7 +24,8 @@ services:
                         - target: 5001
                           published: 5001
                           protocol: tcp
-
+                deploy:
+                        replicas: 2
                           
         service3:
                 image: jadesola/service3
@@ -32,7 +34,8 @@ services:
                         - target: 5002
                           published: 5002
                           protocol: tcp
-
+                deploy:
+                        replicas: 2
 
         service4:
                 image: jadesola/service4
@@ -41,5 +44,6 @@ services:
                         - target: 5003
                           published: 5003
                           protocol: tcp
-
+                deploy:
+                        replicas: 2
 
