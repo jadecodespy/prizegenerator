@@ -1,0 +1,19 @@
+
+{% block body_content %}
+
+<h1> WELCOME TO THE PRIZE GENERATOR </h1>
+
+<h2> TO WIN A CAR, YOUR CODE HAS TO START WITH THE LETTER C </h2>
+
+
+<h3> Your Prize is: {{ prize.text }} </h3>
+
+<form action="{{url_for('home')}}">
+	<button type="submit">Refresh</button>
+
+
+
+{% endblock %}
+
+
+
