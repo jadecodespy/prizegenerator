@@ -1,4 +1,4 @@
-from flask import render_template, request, Response
+from flask import render_template, request, Response, Flask
 import requests
 import random
 
@@ -11,5 +11,5 @@ def lettergen():
 
 
 
-if ___name__ == '__main__':
+if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5002)
