@@ -2,8 +2,8 @@
 
 ## Contents
 
-### 1. [Project Objective] (#Project Objective)
-##### * [App Functionality] (#App Functionality)
+### 1. [Project Objective](#Project Objective)
+##### * App Functionality
 ##### * Tools Used
 ### 2. [Architect](#Architect)
 #####  * Entity Diagram
