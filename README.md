@@ -3,7 +3,7 @@
 ## Contents
 
 ### 1. [Brief](#Brief)
-### 2. [Application Outline](#Application Outline)
+### 2. [App Outline](#App Outline)
 ##### * Tools Used
 ### 3. [Architect](#Architect)
 #####  * Entity Diagram
@@ -38,7 +38,7 @@ Requirments:
 
 
 
-## Application Outline
+## App Outline
 For this project, I created a prize generatator app. A random code is generated and to win prizes you have to have a specific code, to win a car the code has to start with the letter C and the second number has to be a one.To win Chocolates, the fifth number has to be a nine. To achieve all this, i needed to create four micro services, and they all depend on each other in order for the app to work.
 - Service One: This is the core service, it will render the Jinja2 templates needed to interact with the application, it will also be responsible for communicating with the other three services.
 - Service Two & Three: These two services are responsible for creating random outputs for the users.
