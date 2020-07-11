@@ -6,7 +6,7 @@
 ### 1. [Brief](#Brief)
 ##### * App Functionality
 ##### * Tools Used
-### 2. [Architect](#Architect)
+### 2. [Architecture](#Architecture)
 #####  * Entity Diagram
 ##### * CI Pipeline
 ##### * Project Tracking
@@ -60,7 +60,7 @@ For this project, I created a prize generatator app. A random code is generated 
 - Reverse Proxy: NGINX
 
 
-## Architect
+## Architecture
 
 (short text)
 
