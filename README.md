@@ -2,7 +2,8 @@
 
 ## Contents
 
-### 1. [Project Objective](#Project Objective)
+
+### 1. [Brief](#Brief)
 ##### * App Functionality
 ##### * Tools Used
 ### 2. [Architect](#Architect)
@@ -25,7 +26,8 @@
 
 
 
-## Project Objective 
+## Brief
+
 In this project, the brief states to create an application that has four servers, allowing the user to generate an output based on a set of predefined rules. To complete this project a full expansion of tasks and tools were used to meet the project goal. The MVP requirements are below:
 
 Requirments:
