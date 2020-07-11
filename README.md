@@ -6,7 +6,7 @@
 ### 2. [Application Outline](#Application Outline)
 ##### * Tools Used
 ### 3. [Architect](#Architect)
-#### * Entity Diagram
+#####  * Entity Diagram
 ##### * CI Pipeline
 ##### * Project Tracking
 ### 4. [Implementation](#Implementation)
@@ -53,6 +53,10 @@ For this project, I created a prize generatator app. A random code is generated 
 - Containerisation: Docker
 - Orchestration Tools: Docker Swarm
 - Reverse Proxy: NGINX
+
+
+## Architect
+
 
 
 
