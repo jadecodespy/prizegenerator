@@ -2,28 +2,30 @@
 
 ## Contents
 
-### 1. [Brief](#Brief)
-### 2. [Plan](#Plan)
+### 1. [Project Objective] (#Project Objective)
+##### * [App Functionality] (#App Functionality)
 ##### * Tools Used
-### 3. [Architect](#Architect)
+### 2. [Architect](#Architect)
 #####  * Entity Diagram
 ##### * CI Pipeline
 ##### * Project Tracking
-### 4. [Implementation](#Implementation)
+### 3. [Implementation](#Implementation)
 ##### * Swarm
 ##### * Ansible
 ##### * Jenkins
 ##### * HTML Update Page
 #### * Nginx
-### 5. [Risk Assessment](#Risk-Assessment)
-### 6. [Testing](#Testing)
-### 7. [Future Improvements](#Future-Improvements)
+### 4. [Risk Assessment](#Risk-Assessment)
+### 5. [Testing](#Testing)
+### 6. [Future Improvements](#Future-Improvements)
 
 
 
+## Helpful Links
 
 
-## Brief 
+
+## Project Objective 
 In this project, the brief states to create an application that has four servers, allowing the user to generate an output based on a set of predefined rules. To complete this project a full expansion of tasks and tools were used to meet the project goal. The MVP requirements are below:
 
 Requirments:
@@ -37,12 +39,13 @@ Requirments:
 - The project must make use of a reverse proxy to make your application accessible to the user.
 
 
-
-## Plan
+##### App Functionality 
 For this project, I created a prize generatator app. A random code is generated and to win prizes you have to have a specific code, to win a car the code has to start with the letter C and the second number has to be a one.To win Chocolates, the fifth number has to be a nine. To achieve all this, i needed to create four micro services, and they all depend on each other in order for the app to work.
 - Service One: This is the core service, it will render the Jinja2 templates needed to interact with the application, it will also be responsible for communicating with the other three services.
 - Service Two & Three: These two services are responsible for creating random outputs for the users.
 - Service Four: This service takes the output from service one & two and process it. It will then create a random output.
+
+(Images)
 
 ##### Tools Used
 - Trello Board
@@ -56,11 +59,50 @@ For this project, I created a prize generatator app. A random code is generated 
 
 
 ## Architect
-#### Entity Diagram
+
+(short text)
+
+##### Entity Diagram
 
 (image)
 
-The Entity diagram shows the database 
+The Entity diagram shows the table for the App. This is a brief breakdown of how the database stores the codes when they are randomly generated. The Prize table has the prize id, the random code and the prize that comes with it.
+
+
+##### CI Pipeline
+
+(images)
+
+The CI (Continuous Integration) piplines shoews the technologies used, and how they are all linked to each other. The diagram gives a visual representation on how the whole project has been implemented. 
+
+
+##### Project Planning 
+
+(images)
+
+To track the progression of the project, a trello board was used. This allowed me to outline the tasks and set gooals for the projecct completion. There were 3 different sprints, as the project progressed different changes where made and the board was updated.
+
+* First Sprint
+* Second Sprint
+* Final Sprint
+
+## Implementation
+
+To get to the final stage of this project, there were differnet ideas implemented using a variety of tools.
+
+* Swarm
+* Ansible
+* Jenkins
+* HTML Page
+* NGINX
+
+## Risk-Assessment
+## Testing
+## Future Improvements
+
+## Author 
+* Jadesola Kanimodo
+
 
 
 
