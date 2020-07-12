@@ -1,12 +1,11 @@
 import unittest
-
 from flask import url_for
 from flask_testing import TestCase
 from os import getenv
+from unittest.mock import patch
 
 
-
-Class TestBase(TestCase):
+class TestBase(TestCase):
     def create_app(self):
         config_name = 'testing'
         app.config.update(SQLALCHEMY_DATABASE_URI=getenv('TEST_DB_URI'),
@@ -28,9 +27,7 @@ Class TestBase(TestCase):
     
 
 
-    classTestViews(TestBase):
-
-        def test_prizegiver_view(self):
-
-            response = self.client.get(url_for('home'))
-            self.assertEqual(response.status_code, 200)
+class TestViews(TestBase):
+     def test_prizegiver_view(self):
+         response = self.client.get(url_for('home'))
+         self.assertEqual(response.status_code, 200)
