@@ -1,0 +1,24 @@
+
+{% block body_content %}
+
+<h1> WELCOME TO THE PRIZE GENERATOR </h1>
+
+<h2> TO WIN A CAR, YOUR CODE HAS TO START WITH THE LETTER C AND THE NUMBER HAS TO BEGIN WITH 1 </h2>
+<h2> TO WIN A CHOCOLATE, THE CODE HAS TO END WITH A 9 </H2>
+
+
+<h3> Code Generated: {{ code }} </h3>
+
+<h3> Your Prize is: {{ prize }} </h3>
+
+<form method='GET' action="{{ url_for('prizegiver') }}">
+	<button type="submit">Refresh</button>
+
+
+</form>
+
+
+{% endblock %}
+
+
+
