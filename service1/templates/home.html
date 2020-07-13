@@ -10,7 +10,7 @@
 
 <h3> Your Prize is: {{ prize }} </h3>
 
-<form action="{{ url_for('prizegiver') }}">
+<form method='GET' action="{{ url_for('prizegiver') }}">
 	<button type="submit">Refresh</button>
 
 
